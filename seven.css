@@ -1,0 +1,123 @@
+img{
+    height: auto;
+    width: 100%;
+    border: 1px solid rgb(224, 211, 213);
+}
+.maincontainer{
+    display: grid;
+
+    grid-template-areas: 
+                        "head head"
+                        "nav main";
+
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 180px auto;
+
+    min-height: 90vh;
+}
+
+header{
+    background-color: coral;
+    grid-area: head;
+}
+nav{
+    background-color:pink;
+    grid-area: nav;
+}
+main{
+    background-color:rgb(11, 143, 143);
+    grid-area: main;
+}
+footer{
+    background-color:aquamarine;
+    grid-area: foot;
+}
+.maincontainer2{
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+    
+}
+
+.card1,.card2,.card3,.card4,.card5,.card6{
+    background-color: palevioletred;
+    padding: 10px;
+    color: #f1f5f6;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    font-size: x-large;
+    margin: 10px;
+}
+.card1:hover{
+    scale: 1.2;
+    transition: 2s;
+    
+}
+.card2:hover{
+    scale: 1.2;
+    transition: 2s;
+    
+}
+.card3:hover{
+    scale: 1.2;
+    transition: 2s;
+    
+}
+.card4:hover{
+    scale: 1.2;
+    transition: 2s;
+    
+}
+.card5:hover{
+    scale: 1.2;
+    transition: 2s;
+    
+}
+.card6:hover{
+    scale: 1.2;
+    transition: 2s;
+    
+}
+.h1{
+    margin-left: 40%;
+    color: #0f5ca8;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+    
+    
+}
+.h2{
+    margin-left: 37%;
+    color: grey;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+    
+    
+}
+i{
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size:25px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.p1{
+    color: #1c1d1e;
+    margin-left: 15%;
+}
+.p2,.p3,.p4{
+    font-style: italic;
+}
+
+@media (max-width:990px){
+    body{
+        background-color: white;
+    }
+}
